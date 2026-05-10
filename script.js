@@ -154,23 +154,7 @@
             $await(Jscex.Async.sleep(1000));
         }
     }));
-     var textAnimate = eval(Jscex.compile("async", function () {
-        var together2 = new Date();
-        together2.setFullYear(2018, 1, 26);
-        together2.setHours(0);
-        together2.setMinutes(0);
-        together2.setSeconds(0);
-        together2.setMilliseconds(0);
-
-        $("#code").show().typewriter();
-        $("#clock-box").fadeIn(500);
-        while (true) {
-            timeElapse(together2);
-            $await(Jscex.Async.sleep(1000));
-        }
-    }));
-
-    var runAsync = eval(Jscex.compile("async", function () {
+       var runAsync = eval(Jscex.compile("async", function () {
         $await(seedAnimate());
         $await(growAnimate());
         $await(flowAnimate());
