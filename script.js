@@ -155,17 +155,17 @@
         }
     }));
      var textAnimate = eval(Jscex.compile("async", function () {
-        var together = new Date();
-        together.setFullYear(2018, 1, 26);
-        together.setHours(0);
-        together.setMinutes(0);
-        together.setSeconds(0);
-        together.setMilliseconds(0);
+        var together2 = new Date();
+        together2.setFullYear(2018, 1, 26);
+        together2.setHours(0);
+        together2.setMinutes(0);
+        together2.setSeconds(0);
+        together2.setMilliseconds(0);
 
         $("#code").show().typewriter();
         $("#clock-box").fadeIn(500);
         while (true) {
-            timeElapse(together);
+            timeElapse(together2);
             $await(Jscex.Async.sleep(1000));
         }
     }));
